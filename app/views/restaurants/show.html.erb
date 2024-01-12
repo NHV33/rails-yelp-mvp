@@ -11,4 +11,5 @@
 
 <% @reviews.each do |review| %>
   <%= render '/review', review: review %>
+  <%= button_to 'Delete', review_path(review), method: :delete, :class => "btn btn-primary" %>
 <% end %>

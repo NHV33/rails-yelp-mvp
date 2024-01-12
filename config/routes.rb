@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   resources :restaurants do
     resources :reviews, only: [:index, :new, :create]
   end
-  resources :reviews, only: [:show, :edit, :update, :destroy]
+  # delete "reviews/:id" => "reviews#destroy", as: :delete_review
+  resources :reviews, only: [:destroy]
 end
