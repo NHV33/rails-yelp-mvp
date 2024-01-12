@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    <% rating = %>
+    <%= ("❤️" * review.rating) + ("🖤" * (5 - review.rating)) %>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= review.content %></li>
+  </ul>
+</div>
+</div>

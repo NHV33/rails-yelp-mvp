@@ -7,3 +7,8 @@
     <p class="card-text"><%= @restaurant.phone_number %></p>
   </div>
 </div>
+<%= link_to "Write Review", new_restaurant_review_path(@restaurant), :class => "btn btn-primary" %>
+
+<% @reviews.each do |review| %>
+  <%= render '/review', review: review %>
+<% end %>

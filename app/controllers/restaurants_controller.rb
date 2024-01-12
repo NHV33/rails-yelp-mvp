@@ -18,7 +18,8 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-
+    @reviews = @restaurant.reviews
+    # @reviews = Review.all
   end
 
   private
